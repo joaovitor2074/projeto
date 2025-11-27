@@ -1,0 +1,49 @@
+=======================================================================
+                              HEADER
+=======================================================================
+|  [LOGO]                   [MENU CENTRAL]               [BOTÃO CTA]  |
+|  Logo IFMA/AQARH     Home | Projetos | Pesquisas | Contato     Ver Mais |
+-----------------------------------------------------------------------
+
+=======================================================================
+                              MAIN
+=======================================================================
+
+----------------------------- HERO -----------------------------------
+|  [IMAGEM GRANDE DE FUNDO]                                           |
+|                                                                     |
+|  Título Chamativo: "Pesquisa, Ciência e Inovação no IFMA – Codó"    |
+|  Subtítulo curto explicando o objetivo do grupo                    |
+|  [BOTÃO PRINCIPAL: Conheça Nossos Projetos]                        |
+-----------------------------------------------------------------------
+
+-------------------- SEÇÃO RESUMOS DAS PÁGINAS -----------------------
+|  [CARD 1 – SOBRE]                                                   |
+|   Pequeno texto apresentando o grupo AQARH e sua missão            |
+|   Link: "Saiba Mais"                                               |
+|---------------------------------------------------------------------|
+|  [CARD 2 – PROJETOS]                                                |
+|   Breve resumo + botão para ver todos os projetos                  |
+|---------------------------------------------------------------------|
+|  [CARD 3 – PESQUISAS]                                               |
+|   Pequeno texto explicando as linhas de pesquisa                   |
+|---------------------------------------------------------------------|
+
+--------------------------- SEÇÃO EXTRA -------------------------------
+|  Pode ser: Destaques, Equipe, Notícias, Fotos, etc                 |
+|  Dependendo do que você quiser adicionar                          |
+-----------------------------------------------------------------------
+
+=======================================================================
+                              FOOTER
+=======================================================================
+|---------------------------------------------------------------------|
+|   [COLUNA 1]                 [COLUNA 2]              [COLUNA 3]     |
+|   Sobre o Grupo             Navegação               Contato         |
+|   IFMA – Codó               Home                    Email: ...      |
+|   AQARH                     Projetos                Localização     |
+|                             Pesquisas              (Endereço IFMA)  |
+|---------------------------------------------------------------------|
+|                © 2025 AQARH – IFMA – Campus Codó                    |
+|           Desenvolvido por JV – Iniciação Científica 2025/26        |
+-----------------------------------------------------------------------
