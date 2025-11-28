@@ -22,10 +22,7 @@
   --font-body: 'Inter', sans-serif;
 
   /* Tamanhos de fonte */
-  --h1: 32px;
-  --h2: 24px;
-  --h3: 20px;
-  --p: 16px;
+
 
   /* Espaçamentos padrão */
   --spacing-xs: 4px;
@@ -51,10 +48,11 @@
 
 html, body {
   font-family: var(--font-body);
-  font-size: var(--p);
+  font-size: 16px; /* tamanho padrão */
   background: var(--color-gray-light);
   color: var(--color-gray-dark);
 }
+
 
 
 /* =======================
@@ -64,22 +62,6 @@ h1, h2, h3 {
   font-family: var(--font-title);
 }
 
-h1 {
-  font-size: var(--h1);
-}
-
-h2 {
-  font-size: var(--h2);
-}
-
-h3 {
-  font-size: var(--h3);
-}
-
-p {
-  font-size: var(--p);
-  line-height: 1.6;
-}
 
 
 /* =======================
@@ -132,13 +114,13 @@ p {
 /* =======================
    LAYOUT (HEADER + SIDEBAR)
    ======================= */
-header {
+/* header {
   background: var(--color-primary-dark);
   padding: var(--spacing-md);
   color: var(--color-white);
   font-family: var(--font-title);
   box-shadow: var(--shadow);
-}
+} */
 
 .sidebar {
   width: 260px;

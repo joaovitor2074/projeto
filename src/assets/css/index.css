@@ -1,0 +1,81 @@
+/* =======================
+   RESET BÁSICO
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #006A4E;
+    color: #ffffff;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+    width: 100%;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;  /* LOGO ←→ MENU */
+    align-items: center;
+
+    background-color: #00573E;  /* tom mais escuro */
+}
+
+/* LOGO */
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.header-logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* MENU */
+nav ul {
+    display: flex;           /* coloca links lado a lado */
+    gap: 32px;               /* espaço entre links */
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b5f5d2;
+    text-decoration: underline;
+}
+
+/* =======================
+   RESPONSIVO
+======================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* quebra para vertical no mobile */
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+}
