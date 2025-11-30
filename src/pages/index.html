@@ -4,104 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AQARH IFMA</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/output.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/index.css">
 </head>
-<body>
-   <header class="w-full bg-(--color-primary-dark) text-white py-4 shadow flex items-center justify-between px-8">
 
-    <!-- LOGO -->
-    <div class="flex items-center gap-3">
-        <h1 class="text-2xl font-bold">AQARH</h1>
-        <!-- coloque o caminho da logo aqui -->
-        <img src="" alt="Logo AQARH" id="logo" class="w-10 h-10 object-contain">
-    </div>
+<body class="text-gray-900">
 
-    <!-- MENU -->
-    <nav>
-        <ul class="flex items-center gap-8 text-lg font-medium">
-            <li><a href="#" class="hover:text-(--color-accent) transition">Início</a></li>
-            <li><a href="#" class="hover:text-(--color-accent) transition">Contato</a></li>
-            <li><a href="#" class="hover:text-(--color-accent) transition">projeto</a></li>
-            <li><a href="#" class="hover:text-(--color-accent) transition">Contato</a></li>
-        </ul>
-    </nav>
+    <!-- HEADER -->
+    <header class="w-full bg-[--color-primary-dark] text-white py-4 shadow flex items-center justify-between px-8">
 
-    <!-- BOTÃO CTA -->
-    <button class="btn">
-        Acessar Publicações
-    </button>
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <h1 class="text-2xl font-bold">AQARH</h1>
+            <img src="" alt="Logo AQARH" id="logo" class="w-10 h-10 object-contain">
+        </div>
 
-</header>
-<main >
-    <section id="main-hero" class="hero">
-        <div class="overlay"></div>
-        <h1 id="main-hero-h1">Seja bem vindo ao nosso Grupo de Pesquisa</h1>
-        <p id="main-hero-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit odio dolor maxime id dicta dolorem eligendi quasi facere minima quia, in commodi dolorum, magni dolores ex.</p>
-        <button id="main-hero-btn">
-            Conheça nossos projetos
+        <!-- MENU -->
+        <nav>
+            <ul class="flex items-center gap-8 text-lg font-medium">
+                <li><a href="#" class="hover:text-[--color-accent] transition">Início</a></li>
+                <li><a href="#" class="hover:text-[--color-accent] transition">Contato</a></li>
+                <li><a href="#" class="hover:text-[--color-accent] transition">Projeto</a></li>
+                <li><a href="#" class="hover:text-[--color-accent] transition">Publicações</a></li>
+            </ul>
+        </nav>
+
+        <!-- BOTÃO CTA -->
+        <button class="btn">
+            Acessar Publicações
         </button>
-    </section>
-    <section id="card-sobre">
-        <h2>Sobre o AQARH</h2>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vero magnam et ducimus modi numquam suscipit distinctio similique consectetur odit iure non culpa autem animi officiis, laborum ipsam aliquam porro?<p>
-        <button class="btn">Saiba Mais</button>
-    </section>
 
-    <section>
-        <h2>Projetos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae praesentium laboriosam in, maiores quos exercitationem nemo sequi voluptatem cumque? Error sapiente aut adipisci atque, laborum rerum sed eaque maiores.</p>
-        <button class="btn">Ver mais Projetos</button>
-    </section>
+    </header>
 
-    <section>
-        <h2>Pesquisas (mostrar pesquisas)</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae praesentium laboriosam in, maiores quos exercitationem nemo sequi voluptatem cumque? Error sapiente aut adipisci atque, laborum rerum sed eaque maiores.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nostrum sit, blanditiis perferendis quia quasi non officia voluptas deleniti at possimus facere quisquam enim. Dignissimos, mollitia! Placeat ea tempore inventore.</p>
-    </section>
-    <section class="flex pt-32 ">
-        <h2>equipes</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deserunt eos modi magni iure veniam, aut quo sapiente repellat tempora vero! Tempore veritatis quis nesciunt cum perspiciatis quidem consequatur nam.</p>
-        <img src="../../public/images/imagem-sinalizar.jpg" alt="" class="w-72">
-    </section>
-    
-</main>
+    <!-- MAIN -->
+    <main>
 
-<footer class="footer">
-  <div class="footer-container">
+        <!-- HERO -->
+        <section id="main-hero" class="hero relative">
+            <div class="overlay"></div>
+            <h1 id="main-hero-h1">
+                Seja bem vindo ao nosso Grupo de Pesquisa
+            </h1>
 
-    <div class="footer-col">
-      <h3>Sobre o Grupo</h3>
-      <p>IFMA – Campus Codó</p>
-      <p>AQARH – Alimentos, Química, Agronomia e Recursos Hídricos</p>
-    </div>
+            <p id="main-hero-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Odit odio dolor maxime id dicta dolorem eligendi quasi facere minima quia.
+            </p>
 
-    <div class="footer-col">
-      <h3>Navegação</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Pesquisas</a></li>
-      </ul>
-    </div>
+            <button id="main-hero-btn" class="btn">
+                Conheça nossos projetos
+            </button>
+        </section>
 
-    <div class="footer-col">
-      <h3>Contato</h3>
-      <p>Email: exemplo@ifma.edu.br</p>
-      <p>Localização: IFMA – Campus Codó<br>Endereço completo aqui</p>
-    </div>
+        <!-- SOBRE -->
+        <section id="card-sobre" class="text-center py-20 px-6 max-w-3xl mx-auto">
+            <h2>Sobre o AQARH</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vero magnam et ducimus.
+            </p>
 
-  </div>
+            <button class="btn mt-4">Saiba Mais</button>
+        </section>
 
-  <div class="footer-bottom">
-    <p>© 2025 AQARH – IFMA – Campus Codó</p>
-    <p>Desenvolvido por JV – Iniciação Científica 2025/26</p>
-  </div>
-</footer>
+        <!-- PROJETOS -->
+        <section class="text-center py-20 px-6 max-w-3xl mx-auto">
+            <h2>Projetos</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae praesentium laboriosam maiores.
+            </p>
+            <button class="btn mt-4">Ver mais Projetos</button>
+        </section>
 
+        <!-- PESQUISAS -->
+        <section class="py-24 px-6 max-w-4xl mx-auto">
+            <h2>Pesquisas</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae praesentium laboriosam maiores.
+            </p>
+            <p class="mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veniam nostrum sit, blanditiis perferendis quia quasi.
+            </p>
+        </section>
 
+        <!-- EQUIPE -->
+        <section class="flex flex-col lg:flex-row items-center gap-10 py-24 px-6 max-w-5xl mx-auto">
+            <div class="flex-1">
+                <h2>Equipe</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus deserunt eos modi magni iure veniam, aut quo sapiente repellat tempora.
+                </p>
+            </div>
 
+            <img src="../../public/images/imagem-sinalizar.jpg" alt="Equipe" class="w-72 rounded-lg shadow">
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h3>Sobre o Grupo</h3>
+                <p>IFMA – Campus Codó</p>
+                <p>AQARH – Alimentos, Química, Agronomia e Recursos Hídricos</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Pesquisas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p>Email: exemplo@ifma.edu.br</p>
+                <p>Localização: IFMA – Campus Codó<br>Endereço completo aqui</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 AQARH – IFMA – Campus Codó</p>
+            <p>Desenvolvido por JV – Iniciação Científica 2025/26</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
     <script src="../assets/js/main.js"></script>
+
 </body>
 </html>

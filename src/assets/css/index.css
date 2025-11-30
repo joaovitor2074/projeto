@@ -1,6 +1,6 @@
-/* =======================
+/* ============================================================
    RESET BÁSICO
-======================= */
+============================================================ */
 * {
     margin: 0;
     padding: 0;
@@ -10,23 +10,19 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #006A4E;
-    color: #ffffff;;
+    color: #ffffff;
 }
 
-/* =======================
+/* ============================================================
    HEADER
-======================= */
+============================================================ */
 header {
     width: 100%;
     padding: 20px 40px;
-
+    background-color: #00573E;
     display: flex;
     justify-content: space-between;
-    /* LOGO ←→ MENU */
     align-items: center;
-
-    background-color: #00573E;
-    /* tom mais escuro */
 }
 
 /* LOGO */
@@ -50,17 +46,15 @@ header {
 /* MENU */
 nav ul {
     display: flex;
-    /* coloca links lado a lado */
     gap: 32px;
-    /* espaço entre links */
     list-style: none;
 }
 
 nav ul li a {
     font-size: 18px;
-    text-decoration: none;
     color: white;
-    transition: 0.3s ease;
+    text-decoration: none;
+    transition: .3s ease;
 }
 
 nav ul li a:hover {
@@ -68,54 +62,57 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/*--------------------------------------------------*
-/*Main Hero Section*/
-main{
+/* ============================================================
+   MAIN
+============================================================ */
+main {
     margin: 0 auto;
     width: 85%;
     max-width: 1200px;
 }
 
+/* ===================== HERO ===================== */
 .hero {
     position: relative;
     height: 100vh;
     background: url('../../../public/images/imagem-sinalizar.jpg') center/cover no-repeat;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .hero .overlay {
-      position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45); /* ESCURECE a imagem */
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
 }
 
-#main-hero-h1 {
-  padding-top: 200px;
-  text-align: center;
-  position: relative;
-  color: #fff;
-  font-size: 4rem;
-  z-index: 2;
-}
-
-#main-hero-p {
-    text-align: center;
-    padding: 30px 50px;
+#main-hero-h1,
+#main-hero-p,
+#main-hero-btn {
     position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Título */
+#main-hero-h1 {
+    color: #fff;
+    font-size: 4rem;
+    padding-top: 100px;
+}
+
+/* Texto */
+#main-hero-p {
     color: #fff;
     font-size: 1.5rem;
     margin-top: 20px;
-    z-index: 2;
+    padding: 0 40px;
 }
 
+/* Botão */
 #main-hero-btn {
-    display: flex;
-    margin: 0 auto;
-    padding: 50px;
-    position: relative;
-    z-index: 2;
     margin-top: 30px;
     padding: 12px 24px;
     font-size: 1.2rem;
@@ -124,124 +121,128 @@ main{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: .3s ease;
 }
 
+#main-hero-btn:hover {
+    background-color: #a2eec5;
+}
 
-
-/*footer*/
-/* ================================
-      FOOTER — Estilo Glass
-================================ */
+/* ============================================================
+   FOOTER — Glassmorphism
+============================================================ */
 .footer {
-  background: rgba(255, 255, 255, 0.15);  /* leve transparência */
-  backdrop-filter: blur(12px);            /* efeito vidro */
-  -webkit-backdrop-filter: blur(12px);
-  padding: 50px 20px 25px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 50px 20px 25px;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* Container das colunas */
+/* Container */
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 /* Colunas */
 .footer-col {
-  flex: 1;
-  min-width: 240px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.08); /* mini-card glass */
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+    flex: 1;
+    min-width: 240px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* Título */
+/* Títulos */
 .footer-col h3 {
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-  color: #ffffff;
-  font-weight: 600;
-  text-shadow: 0 0 6px rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 
-/* Texto */
+/* Parágrafos */
 .footer-col p {
-  margin: 6px 0;
-  color: #eaeaea;
+    margin: 6px 0;
+    color: #eaeaea;
 }
 
 /* Lista de navegação */
 .footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
 }
 
 .footer-col ul li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
-/* Links */
 .footer-col ul li a {
-  color: #eaeaea;
-  text-decoration: none;
-  transition: 0.25s ease;
+    color: #eaeaea;
+    text-decoration: none;
+    transition: .25s;
 }
 
 .footer-col ul li a:hover {
-  color: #ffffff;
-  padding-left: 4px;
+    color: #fff;
+    padding-left: 4px;
 }
 
-/* Linha final */
+/* Bottom */
 .footer-bottom {
-  text-align: center;
-  margin-top: 35px;
-  padding-top: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.9rem;
-  color: #eee;
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #eee;
 }
 
 .footer-bottom p {
-  margin: 4px 0;
+    margin: 4px 0;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .footer-col {
-    min-width: 100%;
-  }
-}
-
-
-/* =======================
+/* ============================================================
    RESPONSIVO
-======================= */
+============================================================ */
 @media (max-width: 768px) {
+
+    /* HEADER */
     header {
         flex-direction: column;
-        /* quebra para vertical no mobile */
         gap: 20px;
+        text-align: center;
     }
 
     nav ul {
         flex-direction: column;
-        text-align: center;
         gap: 12px;
+    }
+
+    /* HERO */
+    #main-hero-h1 {
+        font-size: 2.8rem;
+        padding-top: 120px;
+    }
+
+    #main-hero-p {
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-col {
+        min-width: 100%;
     }
 }
