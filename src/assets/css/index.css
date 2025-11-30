@@ -80,7 +80,7 @@ main{
     position: relative;
     height: 100vh;
     background: url('../../../public/images/imagem-sinalizar.jpg') center/cover no-repeat;
-    display: flex;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
@@ -92,11 +92,142 @@ main{
 }
 
 #main-hero-h1 {
-    position: relative;
+  padding-top: 200px;
+  text-align: center;
+  position: relative;
   color: #fff;
   font-size: 4rem;
   z-index: 2;
 }
+
+#main-hero-p {
+    text-align: center;
+    padding: 30px 50px;
+    position: relative;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+#main-hero-btn {
+    display: flex;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #006A4E;
+    background-color: #b5f5d2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/*footer*/
+/* ================================
+      FOOTER — Estilo Glass
+================================ */
+.footer {
+  background: rgba(255, 255, 255, 0.15);  /* leve transparência */
+  backdrop-filter: blur(12px);            /* efeito vidro */
+  -webkit-backdrop-filter: blur(12px);
+  padding: 50px 20px 25px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Container das colunas */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Colunas */
+.footer-col {
+  flex: 1;
+  min-width: 240px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08); /* mini-card glass */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Título */
+.footer-col h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* Texto */
+.footer-col p {
+  margin: 6px 0;
+  color: #eaeaea;
+}
+
+/* Lista de navegação */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+.footer-col ul li a {
+  color: #eaeaea;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+/* Linha final */
+.footer-bottom {
+  text-align: center;
+  margin-top: 35px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+.footer-bottom p {
+  margin: 4px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+  }
+}
+
 
 /* =======================
    RESPONSIVO
