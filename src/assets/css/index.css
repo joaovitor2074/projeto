@@ -1,248 +1,322 @@
-/* ============================================================
-   RESET BÁSICO
-============================================================ */
+/* ============================
+   RESET
+============================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #006A4E;
-    color: #ffffff;
+html {
+    scroll-behavior: smooth;
 }
 
-/* ============================================================
+body {
+    font-family: "Inter", sans-serif;
+    color: #222;
+    background-color: #dddddd;
+    line-height: 1.5;
+}
+
+/* ============================
+   CONTAINERS E LAYOUT
+============================ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================
    HEADER
-============================================================ */
-header {
+============================ */
+/* ============================
+   HEADER
+============================ */
+.header {
     width: 100%;
-    padding: 20px 40px;
-    background-color: #00573E;
+    height: 80px;
+    padding: 0 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background: #006A4E;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-/* LOGO */
-.header-logo {
+/* LADO ESQUERDO */
+.header-left {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.header-logo img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+.logo-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ffffff;
 }
 
-.header-logo h1 {
-    font-size: 28px;
-    font-weight: bold;
+.logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
 }
 
 /* MENU */
-nav ul {
+.nav-menu ul {
+    list-style: none;
     display: flex;
     gap: 32px;
-    list-style: none;
 }
 
-nav ul li a {
-    font-size: 18px;
-    color: white;
+.nav-menu a {
     text-decoration: none;
-    transition: .3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e7e7e7;
+    transition: 0.5s;
 }
 
-nav ul li a:hover {
-    color: #b5f5d2;
-    text-decoration: underline;
+.nav-menu a:hover {
+    color: #00996E;
 }
 
-/* ============================================================
-   MAIN
-============================================================ */
-main {
-    margin: 0 auto;
-    width: 85%;
-    max-width: 1200px;
+/* BOTÃO DO HEADER */
+.btn.cta {
+    padding: 10px 20px;
+    background-color: #00a075;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .7s;
 }
 
-/* ===================== HERO ===================== */
+.btn.cta:hover {
+    background-color: #00aa7a;
+}
+
+
+/* ============================
+   HERO
+============================ */
+/* ============================
+   HERO
+============================ */
 .hero {
+    width: 100%;
+    height: 75vh;
+
+    background: url("../images/hero.jpg") center/cover no-repeat;
     position: relative;
-    height: 100vh;
-    background: url('../../../public/images/imagem-sinalizar.jpg') center/cover no-repeat;
+
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 60px;
 }
 
+/* overlay */
 .hero .overlay {
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.45);
 }
 
-#main-hero-h1,
-#main-hero-p,
-#main-hero-btn {
+/* texto */
+.hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
+    max-width: 600px;
+    color: white;
 }
 
-/* Título */
-#main-hero-h1 {
-    color: #fff;
-    font-size: 4rem;
-    padding-top: 100px;
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
 }
 
-/* Texto */
-#main-hero-p {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    padding: 0 40px;
-}
-
-/* Botão */
-#main-hero-btn {
-    margin-top: 30px;
-    padding: 12px 24px;
+.hero-content p {
+    margin: 18px 0 28px;
     font-size: 1.2rem;
-    color: #006A4E;
-    background-color: #b5f5d2;
+}
+
+/* botão */
+.hero-btn {
+    padding: 12px 26px;
+    background: #006A4E;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
-    transition: .3s ease;
+    font-weight: 600;
+    transition: .2s;
 }
 
-#main-hero-btn:hover {
-    background-color: #a2eec5;
+.hero-btn:hover {
+    background: #00996e;
 }
 
-/* ============================================================
-   FOOTER — Glassmorphism
-============================================================ */
-.footer {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    padding: 50px 20px 25px;
-    color: #fff;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+/* ============================
+   SEÇÕES PADRÃO
+============================ */
+.section,
+.section-large {
+    text-align: center;
+    padding: 80px 20px;
 }
 
-/* Container */
-.footer-container {
-    max-width: 1200px;
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #006A4E;
+}
+
+.section-text {
+    max-width: 750px;
     margin: 0 auto;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.section-btn {
+    padding: 10px 22px;
+    background: #006A4E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.section-btn:hover {
+    background: #00996e;
+}
+/* ============================
+   EQUIPE
+============================ */
+.section-team {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
-    flex-wrap: wrap;
+    padding: 80px 40px;
 }
 
-/* Colunas */
-.footer-col {
-    flex: 1;
-    min-width: 240px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.08);
+.team-text {
+    max-width: 50%;
+}
+
+.team-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team-img {
+    width: 320px;
+    height: 260px;
+    object-fit: cover;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* Títulos */
+.team-img-sm {
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* ============================
+   FOOTER
+============================ */
+/* ============================
+   FOOTER
+============================ */
+.footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
 .footer-col h3 {
-    font-size: 1.3rem;
     margin-bottom: 12px;
-    font-weight: 600;
-    text-shadow: 0 0 6px rgba(0,0,0,0.3);
+    font-size: 1.2rem;
 }
 
-/* Parágrafos */
-.footer-col p {
-    margin: 6px 0;
-    color: #eaeaea;
-}
-
-/* Lista de navegação */
 .footer-col ul {
     list-style: none;
 }
 
-.footer-col ul li {
-    margin-bottom: 8px;
-}
-
-.footer-col ul li a {
-    color: #eaeaea;
+.footer-col a {
     text-decoration: none;
-    transition: .25s;
+    color: #ccc;
+    transition: 0.2s;
 }
 
-.footer-col ul li a:hover {
-    color: #fff;
-    padding-left: 4px;
+.footer-col a:hover {
+    color: white;
 }
 
-/* Bottom */
 .footer-bottom {
-    margin-top: 35px;
-    padding-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 16px;
     font-size: 0.9rem;
-    color: #eee;
+    color: #aaa;
 }
 
-.footer-bottom p {
-    margin: 4px 0;
-}
-
-/* ============================================================
+/* ============================
+   RESPONSIVIDADE
+============================ */
+/* ============================
    RESPONSIVO
-============================================================ */
-@media (max-width: 768px) {
-
-    /* HEADER */
-    header {
+============================ */
+@media (max-width: 900px) {
+    .section-team {
         flex-direction: column;
-        gap: 20px;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 12px;
+    .team-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-left: 20px;
+        height: 60vh;
     }
 
-    /* HERO */
-    #main-hero-h1 {
-        font-size: 2.8rem;
-        padding-top: 120px;
-    }
-
-    #main-hero-p {
-        font-size: 1.2rem;
-        padding: 0 20px;
-    }
-
-    /* FOOTER */
-    .footer-container {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .footer-col {
-        min-width: 100%;
+    .hero-content h1 {
+        font-size: 2rem;
     }
 }
